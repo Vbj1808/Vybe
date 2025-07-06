@@ -5,7 +5,6 @@ import { getSandbox, lastAssistantTextMessageContent } from "./utils";
 import { z } from "zod";
 import { FRAGMENT_TITLE_PROMPT, PROMPT, RESPONSE_PROMPT } from "@/prompt";
 import prisma from "@/lib/db";
-import { Input } from "@/components/ui/input";
 
 interface AgentState{
   summary: string,
