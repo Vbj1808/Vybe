@@ -11,7 +11,7 @@ const GENERATION_COST = 1;
 export async function getUsageTracker(){
     const {has} = await auth();
     const hasProAccess = has({plan: "pro"});
-    
+
     const usageTracker = new RateLimiterPrisma({
         storeClient: prisma,
         tableName: "Usage",
